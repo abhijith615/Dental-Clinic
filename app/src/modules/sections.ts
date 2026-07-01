@@ -10,7 +10,7 @@ export function initSections(): void {
   revealHeadings();
   revealFades();
   countUpStats();
-  immersiveServices();
+  bandParallax();
   testimonialMarquees();
 }
 
@@ -71,46 +71,24 @@ function countUpStats() {
   });
 }
 
-/* ---------- immersive services : image follows the cursor ---------- */
-function immersiveServices() {
-  const list = document.getElementById("svcList");
-  const preview = document.getElementById("svcPreview");
-  if (!list || !preview) return;
-  if (window.matchMedia("(pointer: coarse)").matches) return;
-
-  const imgs = Array.from(preview.querySelectorAll<HTMLImageElement>("img"));
-  const rows = Array.from(list.querySelectorAll<HTMLElement>(".svc__row"));
-
-  const xTo = gsap.quickTo(preview, "x", { duration: 0.5, ease: "power3" });
-  const yTo = gsap.quickTo(preview, "y", { duration: 0.5, ease: "power3" });
-  gsap.set(preview, { xPercent: -50, yPercent: -50 });
-
-  let active = false;
-  list.addEventListener("mousemove", (e) => {
-    xTo(e.clientX);
-    yTo(e.clientY);
-  });
-
-  rows.forEach((row) => {
-    row.addEventListener("mouseenter", () => {
-      const idx = parseInt(row.dataset.svc || "0", 10);
-      imgs.forEach((im, i) => im.classList.toggle("is-active", i === idx));
-      if (!active) {
-        active = true;
-        gsap.to(preview, {
-          opacity: 1,
-          scale: 1,
-          duration: 0.5,
-          ease: "power3.out",
-        });
-      }
-    });
-  });
-
-  list.addEventListener("mouseleave", () => {
-    active = false;
-    gsap.to(preview, { opacity: 0, scale: 0.85, duration: 0.4, ease: "power3.out" });
-  });
+/* ---------- parallax image band ---------- */
+function bandParallax() {
+  const bg = document.querySelector<HTMLElement>(".band__bg");
+  if (!bg) return;
+  gsap.fromTo(
+    bg,
+    { yPercent: -12 },
+    {
+      yPercent: 12,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".band",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+    }
+  );
 }
 
 /* ---------- testimonial marquees (seamless, opposite directions) ---------- */

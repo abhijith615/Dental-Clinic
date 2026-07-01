@@ -277,7 +277,7 @@
           </div>
         </section>
 
-        <!-- ============ SERVICES / SPECIALITIES (immersive) ============ -->
+        <!-- ============ SERVICES / SPECIALITIES (image cards) ============ -->
         <section class="svc section" id="work">
           <div class="section__head">
             <span class="section__index" data-fade>02 — Specialities</span>
@@ -286,53 +286,96 @@
             </h2>
           </div>
 
-          <!-- floating preview that follows the cursor (image per service) -->
-          <div class="svc__preview" id="svcPreview" aria-hidden="true">
-            <img src="/img/svc-implants.jpeg" alt="" data-svc="0" />
-            <img src="/img/svc-aligners.jpeg" alt="" data-svc="1" />
-            <img src="/img/svc-veneers.jpeg" alt="" data-svc="2" />
-            <img src="/img/bg-2.jpeg" alt="" data-svc="3" />
-            <img src="/img/svc-rootcanal.jpeg" alt="" data-svc="4" />
-            <img src="/img/4.jpeg" alt="" data-svc="5" />
-          </div>
+          <div class="svc__grid">
+            <a class="svc-card magnetic" href="#contact" data-fade data-cursor="VIEW">
+              <div class="svc-card__media">
+                <img src="/img/svc-implants.jpeg" alt="Dental implants" loading="lazy" />
+              </div>
+              <div class="svc-card__body">
+                <span class="svc-card__idx">01</span>
+                <h3 class="svc-card__name">Dental Implants</h3>
+                <p class="svc-card__desc">Single-visit, digitally-guided titanium roots.</p>
+              </div>
+              <span class="svc-card__arrow">↗</span>
+            </a>
 
-          <div class="svc__list" id="svcList">
-            <a class="svc__row magnetic" href="#contact" data-svc="0" data-cursor="VIEW">
-              <span class="svc__idx">01</span>
-              <span class="svc__name">Dental Implants</span>
-              <span class="svc__desc">Single-visit, digitally-guided titanium roots.</span>
-              <span class="svc__arrow">↗</span>
+            <a class="svc-card magnetic" href="#contact" data-fade data-cursor="VIEW">
+              <div class="svc-card__media">
+                <img src="/img/svc-aligners.jpeg" alt="Invisible aligners" loading="lazy" />
+              </div>
+              <div class="svc-card__body">
+                <span class="svc-card__idx">02</span>
+                <h3 class="svc-card__name">Invisible Aligners</h3>
+                <p class="svc-card__desc">Clear, removable, barely-there straightening.</p>
+              </div>
+              <span class="svc-card__arrow">↗</span>
             </a>
-            <a class="svc__row magnetic" href="#contact" data-svc="1" data-cursor="VIEW">
-              <span class="svc__idx">02</span>
-              <span class="svc__name">Invisible Aligners</span>
-              <span class="svc__desc">Clear, removable, barely-there straightening.</span>
-              <span class="svc__arrow">↗</span>
+
+            <a class="svc-card magnetic" href="#contact" data-fade data-cursor="VIEW">
+              <div class="svc-card__media">
+                <img src="/img/svc-veneers.jpeg" alt="Cosmetic veneers" loading="lazy" />
+              </div>
+              <div class="svc-card__body">
+                <span class="svc-card__idx">03</span>
+                <h3 class="svc-card__name">Cosmetic Veneers</h3>
+                <p class="svc-card__desc">Hand-crafted porcelain, tuned to your face.</p>
+              </div>
+              <span class="svc-card__arrow">↗</span>
             </a>
-            <a class="svc__row magnetic" href="#contact" data-svc="2" data-cursor="VIEW">
-              <span class="svc__idx">03</span>
-              <span class="svc__name">Cosmetic Veneers</span>
-              <span class="svc__desc">Hand-crafted porcelain, tuned to your face.</span>
-              <span class="svc__arrow">↗</span>
+
+            <a class="svc-card magnetic" href="#contact" data-fade data-cursor="VIEW">
+              <div class="svc-card__media">
+                <img src="/img/3.png" alt="Smile design consultation" loading="lazy" />
+              </div>
+              <div class="svc-card__body">
+                <span class="svc-card__idx">04</span>
+                <h3 class="svc-card__name">Smile Design</h3>
+                <p class="svc-card__desc">A full digital preview before we ever begin.</p>
+              </div>
+              <span class="svc-card__arrow">↗</span>
             </a>
-            <a class="svc__row magnetic" href="#contact" data-svc="3" data-cursor="VIEW">
-              <span class="svc__idx">04</span>
-              <span class="svc__name">Smile Design</span>
-              <span class="svc__desc">A full digital preview before we ever begin.</span>
-              <span class="svc__arrow">↗</span>
+
+            <a class="svc-card magnetic" href="#contact" data-fade data-cursor="VIEW">
+              <div class="svc-card__media">
+                <img src="/img/svc-rootcanal.jpeg" alt="Root canal therapy" loading="lazy" />
+              </div>
+              <div class="svc-card__body">
+                <span class="svc-card__idx">05</span>
+                <h3 class="svc-card__name">Root Canal Therapy</h3>
+                <p class="svc-card__desc">Painless, precise, single-sitting endodontics.</p>
+              </div>
+              <span class="svc-card__arrow">↗</span>
             </a>
-            <a class="svc__row magnetic" href="#contact" data-svc="4" data-cursor="VIEW">
-              <span class="svc__idx">05</span>
-              <span class="svc__name">Root Canal Therapy</span>
-              <span class="svc__desc">Painless, precise, single-sitting endodontics.</span>
-              <span class="svc__arrow">↗</span>
+
+            <a class="svc-card magnetic" href="#contact" data-fade data-cursor="VIEW">
+              <div class="svc-card__media">
+                <img src="/img/4.jpeg" alt="Teeth whitening" loading="lazy" />
+              </div>
+              <div class="svc-card__body">
+                <span class="svc-card__idx">06</span>
+                <h3 class="svc-card__name">Teeth Whitening</h3>
+                <p class="svc-card__desc">Several shades brighter in a single visit.</p>
+              </div>
+              <span class="svc-card__arrow">↗</span>
             </a>
-            <a class="svc__row magnetic" href="#contact" data-svc="5" data-cursor="VIEW">
-              <span class="svc__idx">06</span>
-              <span class="svc__name">Teeth Whitening</span>
-              <span class="svc__desc">Several shades brighter in a single visit.</span>
-              <span class="svc__arrow">↗</span>
-            </a>
+          </div>
+        </section>
+
+        <!-- ============ PARALLAX IMAGE BAND ============ -->
+        <section class="band" id="band">
+          <div class="band__bg">
+            <img src="/img/bg-2.jpeg" alt="Digital dental scan technology" loading="lazy" />
+          </div>
+          <div class="band__scrim"></div>
+          <div class="band__content">
+            <span class="band__eyebrow" data-fade>Digital dentistry</span>
+            <h2 class="band__title" data-split>
+              Every treatment is planned in pixels before it ever touches you.
+            </h2>
+            <p class="band__sub" data-fade>
+              3D scans, digital smile design and guided surgery — the technology
+              you'd expect abroad, right here in Kochi.
+            </p>
           </div>
         </section>
 
