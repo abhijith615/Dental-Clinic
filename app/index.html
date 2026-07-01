@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>HIMA — Dental Studio · Kerala</title>
+    <meta
+      name="description"
+      content="HIMA Dental Studio — Kerala's coldest-clean dentistry. Implants, aligners and cosmetic care, frozen to perfection."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===================== PRELOADER ===================== -->
+    <div id="preloader" class="preloader">
+      <div class="preloader__inner">
+        <div class="preloader__brand">
+          <span class="preloader__mark">HIMA</span>
+          <span class="preloader__name">DENTAL STUDIO · KOCHI</span>
+        </div>
+        <div class="preloader__counter">
+          <span id="count" class="preloader__count">0</span>
+          <span class="preloader__pct">%</span>
+        </div>
+        <div class="preloader__bar"><span id="bar" class="preloader__barfill"></span></div>
+        <div class="preloader__meta">
+          <span>KOCHI · KERALA</span>
+          <span class="preloader__status" id="ploadstatus">CALIBRATING&nbsp;FROST</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== CUSTOM CURSOR ===================== -->
+    <div id="cursor" class="cursor">
+      <span class="cursor__dot"></span>
+      <span class="cursor__ring"></span>
+      <span class="cursor__label" id="cursorLabel"></span>
+    </div>
+
+    <!-- ===================== NAV ===================== -->
+    <header class="nav" id="nav">
+      <a class="nav__logo magnetic" href="#" data-cursor="HOME">
+        <span class="nav__logo-word">HIMA</span>
+        <span class="nav__logo-sub">DENTAL&nbsp;STUDIO</span>
+      </a>
+      <nav class="nav__links">
+        <a class="nav__link magnetic" href="#work" data-cursor="EXPLORE">Treatments</a>
+        <a class="nav__link magnetic" href="#about" data-cursor="LISTEN">Studio</a>
+        <a class="nav__link magnetic" href="#contact" data-cursor="SAY HI">Contact</a>
+      </nav>
+      <a class="nav__cta magnetic" href="#contact" data-cursor="BOOK">
+        <span>Book a visit</span>
+      </a>
+    </header>
+
+    <!-- ===================== SMOOTH-SCROLL WRAPPER ===================== -->
+    <main id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="hero">
+          <!-- cinematic 4K film centerpiece -->
+          <div class="hero__stage" id="heroStage">
+            <video
+              id="heroVideo"
+              class="hero__video"
+              src="/video/hero.mp4"
+              muted
+              loop
+              playsinline
+              preload="auto"
+            ></video>
+            <div class="hero__grain"></div>
+            <div class="hero__vignette"></div>
+          </div>
+
+          <!-- grid lines (over the film — "dare to touch the lines") -->
+          <div class="grid" id="grid" aria-hidden="true">
+            <span class="grid__v" style="left: 16.66%"></span>
+            <span class="grid__v" style="left: 33.33%"></span>
+            <span class="grid__v" style="left: 50%"></span>
+            <span class="grid__v" style="left: 66.66%"></span>
+            <span class="grid__v" style="left: 83.33%"></span>
+            <span class="grid__h" style="top: 50%"></span>
+          </div>
+
+          <!-- editorial overlay -->
+          <div class="hero__overlay" id="heroOverlay">
+            <!-- top meta line -->
+            <div class="hero__meta" data-reveal>
+              <span>HIMA DENTAL STUDIO</span>
+              <span class="hero__meta-mid">IMPLANTS · ALIGNERS · COSMETIC</span>
+              <span>KOCHI, KERALA</span>
+            </div>
+
+            <!-- centre headline -->
+            <div class="hero__headline">
+              <div class="hero__scrim" aria-hidden="true"></div>
+              <span class="hero__eyebrow" data-reveal>
+                <span class="hero__eyebrow-dash"></span>
+                Kerala's most advanced dental studio
+              </span>
+              <h1 class="hero__title">
+                <span class="hero__line" data-split>Cool precision.</span>
+                <span class="hero__line hero__line--serif" data-split>Radiant smiles.</span>
+              </h1>
+              <p class="hero__tagline" data-reveal>
+                Painless implants, invisible aligners &amp; cosmetic dentistry —
+                engineered with glacial precision, delivered with warm, gentle care.
+              </p>
+            </div>
+
+            <!-- bottom row : stacking icey cards + scroll hint -->
+            <div class="hero__bottom">
+              <div class="hero__cards" id="heroLeft">
+                <div class="icebox" data-box>
+                  <span class="icebox__kicker">THE HIMA DIFFERENCE</span>
+                  <p class="icebox__text">
+                    Glacier-clean rooms. Digital-precision care.<br />
+                    Zero-fear dentistry for every smile.
+                  </p>
+                </div>
+              </div>
+
+              <div class="hero__scrollhint" id="scrollHint">
+                <span class="hero__scrollhint-line"></span>
+                <span>SCROLL</span>
+              </div>
+
+              <div class="hero__cards hero__cards--right" id="heroRight">
+                <a
+                  class="icebox icebox--accent magnetic"
+                  href="#contact"
+                  data-box
+                  data-cursor="BOOK"
+                >
+                  <span class="icebox__cta">Book your consultation</span>
+                  <span class="icebox__arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ SECTION 1 (pull-up video) ============ -->
+        <section class="sec1" id="sec1">
+          <div class="sec1__pin" id="sec1Pin">
+            <video
+              id="sec1Video"
+              class="sec1__video"
+              src="/video/section1.mp4"
+              muted
+              loop
+              playsinline
+              preload="auto"
+            ></video>
+            <div class="sec1__scrim"></div>
+
+            <!-- WebGL touch-the-lines canvas -->
+            <canvas id="linesCanvas" class="sec1__lines"></canvas>
+
+            <div class="sec1__content">
+              <span class="sec1__eyebrow" data-split>— The HIMA philosophy</span>
+              <h2 class="sec1__head" data-split>
+                Dentistry that feels
+                <em>weightless</em>, calm and impossibly clean.
+              </h2>
+              <p class="sec1__sub" data-split>
+                In our Kochi studio, precision meets stillness. Painless implants,
+                invisible aligners and cosmetic work crafted with the patience of
+                a glacier.
+              </p>
+              <div class="sec1__line magnetic" data-cursor="DRAG">
+                <span>Dare to touch the lines</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ ABOUT / TEAM ============ -->
+        <section class="about section" id="about">
+          <div class="section__head">
+            <span class="section__index" data-fade>01 — About HIMA</span>
+            <h2 class="section__title" data-split>
+              A dental studio as calm and clean as a glacier.
+            </h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__media" data-fade>
+              <img src="/img/2.jpeg" alt="HIMA dental studio interior" />
+              <span class="about__media-tag">Our Kochi studio</span>
+            </div>
+            <div class="about__copy">
+              <p class="about__lead" data-fade>
+                HIMA was built on a simple idea — that world-class dentistry
+                should feel weightless. Ice-cold precision, warm human care, and
+                a space designed to melt away every ounce of anxiety.
+              </p>
+              <p class="about__text" data-fade>
+                From digital implantology to invisible aligners, our specialists
+                pair the latest technology with an almost obsessive eye for
+                detail — so every smile leaves sharper, brighter and entirely
+                yours.
+              </p>
+
+              <div class="about__stats">
+                <div class="stat" data-fade>
+                  <span class="stat__num" data-count="12" data-suffix="+">0</span>
+                  <span class="stat__label">Years of care</span>
+                </div>
+                <div class="stat" data-fade>
+                  <span class="stat__num" data-count="8" data-suffix="k+">0</span>
+                  <span class="stat__label">Smiles crafted</span>
+                </div>
+                <div class="stat" data-fade>
+                  <span class="stat__num" data-count="15" data-suffix="">0</span>
+                  <span class="stat__label">Specialists</span>
+                </div>
+                <div class="stat" data-fade>
+                  <span class="stat__num" data-count="49" data-divide="10" data-suffix="★">0</span>
+                  <span class="stat__label">Avg. rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- team -->
+          <div class="team">
+            <span class="team__eyebrow" data-fade>The specialists</span>
+            <div class="team__grid">
+              <article class="member magnetic" data-fade data-cursor="MEET">
+                <div class="member__photo">
+                  <img src="/img/team-aneesh.jpeg" alt="Dr. Aneesh Menon" loading="lazy" />
+                  <span class="member__idx">/01</span>
+                </div>
+                <div class="member__info">
+                  <h3 class="member__name">Dr. Aneesh Menon</h3>
+                  <span class="member__role">Founder · Implantology</span>
+                </div>
+              </article>
+              <article class="member magnetic" data-fade data-cursor="MEET">
+                <div class="member__photo">
+                  <img src="/img/team-kavya.jpeg" alt="Dr. Kavya Nair" loading="lazy" />
+                  <span class="member__idx">/02</span>
+                </div>
+                <div class="member__info">
+                  <h3 class="member__name">Dr. Kavya Nair</h3>
+                  <span class="member__role">Cosmetic · Aligners</span>
+                </div>
+              </article>
+              <article class="member magnetic" data-fade data-cursor="MEET">
+                <div class="member__photo">
+                  <img src="/img/team-rahul.jpeg" alt="Dr. Rahul Varma" loading="lazy" />
+                  <span class="member__idx">/03</span>
+                </div>
+                <div class="member__info">
+                  <h3 class="member__name">Dr. Rahul Varma</h3>
+                  <span class="member__role">Endodontics</span>
+                </div>
+              </article>
+              <article class="member magnetic" data-fade data-cursor="MEET">
+                <div class="member__photo">
+                  <img src="/img/team-sara.jpeg" alt="Dr. Sara Thomas" loading="lazy" />
+                  <span class="member__idx">/04</span>
+                </div>
+                <div class="member__info">
+                  <h3 class="member__name">Dr. Sara Thomas</h3>
+                  <span class="member__role">Pediatric Dentistry</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ SERVICES / SPECIALITIES (immersive) ============ -->
+        <section class="svc section" id="work">
+          <div class="section__head">
+            <span class="section__index" data-fade>02 — Specialities</span>
+            <h2 class="section__title" data-split>
+              Everything your smile could ever need.
+            </h2>
+          </div>
+
+          <!-- floating preview that follows the cursor (image per service) -->
+          <div class="svc__preview" id="svcPreview" aria-hidden="true">
+            <img src="/img/svc-implants.jpeg" alt="" data-svc="0" />
+            <img src="/img/svc-aligners.jpeg" alt="" data-svc="1" />
+            <img src="/img/svc-veneers.jpeg" alt="" data-svc="2" />
+            <img src="/img/bg-2.jpeg" alt="" data-svc="3" />
+            <img src="/img/svc-rootcanal.jpeg" alt="" data-svc="4" />
+            <img src="/img/4.jpeg" alt="" data-svc="5" />
+          </div>
+
+          <div class="svc__list" id="svcList">
+            <a class="svc__row magnetic" href="#contact" data-svc="0" data-cursor="VIEW">
+              <span class="svc__idx">01</span>
+              <span class="svc__name">Dental Implants</span>
+              <span class="svc__desc">Single-visit, digitally-guided titanium roots.</span>
+              <span class="svc__arrow">↗</span>
+            </a>
+            <a class="svc__row magnetic" href="#contact" data-svc="1" data-cursor="VIEW">
+              <span class="svc__idx">02</span>
+              <span class="svc__name">Invisible Aligners</span>
+              <span class="svc__desc">Clear, removable, barely-there straightening.</span>
+              <span class="svc__arrow">↗</span>
+            </a>
+            <a class="svc__row magnetic" href="#contact" data-svc="2" data-cursor="VIEW">
+              <span class="svc__idx">03</span>
+              <span class="svc__name">Cosmetic Veneers</span>
+              <span class="svc__desc">Hand-crafted porcelain, tuned to your face.</span>
+              <span class="svc__arrow">↗</span>
+            </a>
+            <a class="svc__row magnetic" href="#contact" data-svc="3" data-cursor="VIEW">
+              <span class="svc__idx">04</span>
+              <span class="svc__name">Smile Design</span>
+              <span class="svc__desc">A full digital preview before we ever begin.</span>
+              <span class="svc__arrow">↗</span>
+            </a>
+            <a class="svc__row magnetic" href="#contact" data-svc="4" data-cursor="VIEW">
+              <span class="svc__idx">05</span>
+              <span class="svc__name">Root Canal Therapy</span>
+              <span class="svc__desc">Painless, precise, single-sitting endodontics.</span>
+              <span class="svc__arrow">↗</span>
+            </a>
+            <a class="svc__row magnetic" href="#contact" data-svc="5" data-cursor="VIEW">
+              <span class="svc__idx">06</span>
+              <span class="svc__name">Teeth Whitening</span>
+              <span class="svc__desc">Several shades brighter in a single visit.</span>
+              <span class="svc__arrow">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS (scrolling cards) ============ -->
+        <section class="voices section" id="voices">
+          <div class="section__head">
+            <span class="section__index" data-fade>03 — Patient stories</span>
+            <h2 class="section__title" data-split>
+              8,000 smiles. A few kind words.
+            </h2>
+          </div>
+
+          <div class="voices__marquee" id="voicesMarquee">
+            <div class="voices__track" data-dir="1">
+              <!-- row A cards (duplicated in JS for seamless loop) -->
+              <figure class="vcard">
+                <div class="vcard__stars">★★★★★</div>
+                <blockquote>“I used to dread the dentist. HIMA feels like a spa — I actually look forward to my visits now.”</blockquote>
+                <figcaption><b>Meera R.</b><span>Invisible aligners</span></figcaption>
+              </figure>
+              <figure class="vcard">
+                <div class="vcard__stars">★★★★★</div>
+                <blockquote>“My implant was done in a single morning. Zero pain, and it looks completely natural.”</blockquote>
+                <figcaption><b>Arjun P.</b><span>Dental implant</span></figcaption>
+              </figure>
+              <figure class="vcard">
+                <div class="vcard__stars">★★★★★</div>
+                <blockquote>“The smile-design preview blew me away. I knew exactly what I'd get before starting.”</blockquote>
+                <figcaption><b>Nithya S.</b><span>Veneers</span></figcaption>
+              </figure>
+              <figure class="vcard">
+                <div class="vcard__stars">★★★★★</div>
+                <blockquote>“Cleanest clinic I've ever walked into. The whole team is calm, kind and precise.”</blockquote>
+                <figcaption><b>Fahad K.</b><span>Whitening</span></figcaption>
+              </figure>
+            </div>
+            <div class="voices__track" data-dir="-1">
+              <figure class="vcard">
+                <div class="vcard__stars">★★★★★</div>
+                <blockquote>“They fixed years of anxiety in one appointment. My kids now ask to visit the dentist.”</blockquote>
+                <figcaption><b>Divya M.</b><span>Family care</span></figcaption>
+              </figure>
+              <figure class="vcard">
+                <div class="vcard__stars">★★★★★</div>
+                <blockquote>“Genuinely world-class. Technology you'd expect abroad, right here in Kochi.”</blockquote>
+                <figcaption><b>Rohit V.</b><span>Full-mouth rehab</span></figcaption>
+              </figure>
+              <figure class="vcard">
+                <div class="vcard__stars">★★★★★</div>
+                <blockquote>“Dr. Kavya redesigned my smile and my confidence. Worth every rupee.”</blockquote>
+                <figcaption><b>Ann Maria</b><span>Cosmetic</span></figcaption>
+              </figure>
+              <figure class="vcard">
+                <div class="vcard__stars">★★★★★</div>
+                <blockquote>“Painless root canal — I didn't believe it was possible until HIMA.”</blockquote>
+                <figcaption><b>Suresh N.</b><span>Endodontics</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ AWARDS (dynamic grid) ============ -->
+        <section class="awards section" id="awards">
+          <div class="section__head">
+            <span class="section__index" data-fade>04 — Recognition</span>
+            <h2 class="section__title" data-split>
+              Honoured for the work behind every smile.
+            </h2>
+          </div>
+
+          <div class="awards__grid">
+            <article class="award award--lg magnetic" data-fade data-cursor="">
+              <span class="award__year">2024</span>
+              <h3 class="award__title">Kerala Health<br />Excellence Award</h3>
+              <span class="award__cat">Best Dental Studio</span>
+            </article>
+            <article class="award award--accent magnetic" data-fade>
+              <span class="award__big" data-count="8" data-suffix="k+">0</span>
+              <span class="award__cat">5-star reviews</span>
+            </article>
+            <article class="award magnetic" data-fade>
+              <span class="award__year">2023</span>
+              <h3 class="award__title">FWA of<br />the Day</h3>
+              <span class="award__cat">Digital experience</span>
+            </article>
+            <article class="award magnetic" data-fade>
+              <span class="award__year">ISO</span>
+              <h3 class="award__title">9001<br />Certified</h3>
+              <span class="award__cat">Sterile &amp; safe</span>
+            </article>
+            <article class="award award--wide magnetic" data-fade>
+              <span class="award__year">2022 — 2024</span>
+              <h3 class="award__title">Top-rated dental clinic in Kochi</h3>
+              <span class="award__cat">Google · Practo · JustDial</span>
+            </article>
+            <article class="award award--accent magnetic" data-fade>
+              <span class="award__big" data-count="99" data-suffix="%">0</span>
+              <span class="award__cat">Would recommend</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="contact section" id="contact">
+          <div class="contact__inner">
+            <div class="contact__lead">
+              <span class="section__index" data-fade>05 — Say hello</span>
+              <h2 class="contact__title" data-split>
+                Ready for your coolest smile yet?
+              </h2>
+              <a class="contact__cta magnetic" href="#" data-cursor="BOOK">
+                <span>Book your consultation</span>
+                <span class="contact__cta-arrow">↗</span>
+              </a>
+            </div>
+
+            <div class="contact__grid">
+              <div class="contact__col" data-fade>
+                <span class="contact__k">Visit</span>
+                <p class="contact__v">
+                  HIMA Dental Studio<br />
+                  Marine Drive, Kochi<br />
+                  Kerala 682031
+                </p>
+              </div>
+              <div class="contact__col" data-fade>
+                <span class="contact__k">Talk</span>
+                <p class="contact__v">
+                  <a href="tel:+914841234567">+91 484 123 4567</a><br />
+                  <a href="mailto:hello@himadental.in">hello@himadental.in</a>
+                </p>
+              </div>
+              <div class="contact__col" data-fade>
+                <span class="contact__k">Hours</span>
+                <p class="contact__v">
+                  Mon — Sat · 9:00–20:00<br />
+                  Sun · By appointment
+                </p>
+              </div>
+              <div class="contact__col" data-fade>
+                <span class="contact__k">Follow</span>
+                <p class="contact__v contact__social">
+                  <a href="#" data-cursor="↗">Instagram</a>
+                  <a href="#" data-cursor="↗">Facebook</a>
+                  <a href="#" data-cursor="↗">YouTube</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <span class="footer__logo">HIMA</span>
+            <span class="footer__mid">Cold-clean dentistry · Kochi, Kerala</span>
+            <span class="footer__copy">© 2026 HIMA Dental Studio</span>
+          </footer>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
